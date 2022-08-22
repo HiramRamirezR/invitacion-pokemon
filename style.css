@@ -17,3 +17,46 @@
   height: 45px;
   z-index: 11;
 }
+
+.Grupo_1 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 470px;
+  height: 843px;
+  z-index: 13;
+}
+.palomita {
+  background-image: url("palomita.png");
+  position: absolute;
+  left: 69px;
+  top: 497px;
+  width: 36px;
+  height: 36px;
+  z-index: 12;
+}
+.baseButton_copia_2 {
+  background-image: url("baseButton copia 2.png");
+  position: absolute;
+  left: 44px;
+  top: 486px;
+  width: 85px;
+  height: 57px;
+  z-index: 11;
+}
+
+.leon {
+  font-size: 20px;
+  font-family: "Pokemon Solid";
+  color: rgb(255, 203, 5);
+  line-height: 1.732;
+  text-align: center;
+  text-shadow: 0px 20px 0px rgba(15, 71, 129, 0.004);
+  -moz-transform: matrix( 4.92623507032976,0,0,4.92623507032976,0,0);
+  -webkit-transform: matrix( 4.92623507032976,0,0,4.92623507032976,0,0);
+  -ms-transform: matrix( 4.92623507032976,0,0,4.92623507032976,0,0);
+  position: absolute;
+  left: 213.903px;
+  top: 690.411px;
+  z-index: 20;
+}
