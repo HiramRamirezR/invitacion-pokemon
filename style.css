@@ -1,5 +1,5 @@
 .palomita {
-  background-image: url("palomita.png");
+  background-image: url("images/palomita.png");
   position: absolute;
   left: 69px;
   top: 497px;
@@ -9,7 +9,7 @@
 }
 
 .fecha {
-  background-image: url("fecha.png");
+  background-image: url("images/fecha.png");
   position: absolute;
   left: 66px;
   top: 385px;
