@@ -1,0 +1,9 @@
+.palomita {
+  background-image: url("palomita.png");
+  position: absolute;
+  left: 69px;
+  top: 497px;
+  width: 36px;
+  height: 36px;
+  z-index: 13;
+}
