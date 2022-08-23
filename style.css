@@ -6,7 +6,15 @@
   width: 103px;
   height: 54px;
   z-index: 31;
-  display: none;
+}
+.off {
+  background-image: url("images/off.png");
+  position: absolute;
+  left: 177px;
+  top: 33px;
+  width: 117px;
+  height: 69px;
+  z-index: 28;
 }
 .fondoNegro {
   background-image: url("images/fondoNegro.png");
@@ -18,14 +26,8 @@
   z-index: 30;
   display: none;
 }
-.off {
-  background-image: url("images/off.png");
-  position: absolute;
-  left: 177px;
-  top: 33px;
-  width: 117px;
-  height: 69px;
-  z-index: 28;
+.hidden {
+  display: none;
 }
 .globos {
   background-image: url("images/globos.png");
@@ -48,12 +50,13 @@
 .leon {
   background-image: url("images/leon.png");
   position: absolute;
-  left: 101px;
-  top: 611px;
-  width: 275px;
-  height: 130px;
+  left: 86px;
+  top: 606px;
+  width: 305px;
+  height: 135px;
   z-index: 26;
 }
+
 .cumpleanos {
   background-image: url("images/cumpleaños.png");
   position: absolute;
