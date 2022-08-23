@@ -14,7 +14,7 @@
   top: 33px;
   width: 117px;
   height: 69px;
-  z-index: 28;
+  z-index: 30;
 }
 .fondoNegro {
   background-image: url("images/fondoNegro.png");
@@ -23,8 +23,7 @@
   top: 0px;
   width: 470px;
   height: 843px;
-  z-index: 30;
-  display: none;
+  z-index: 29;
 }
 .hidden {
   display: none;
