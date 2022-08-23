@@ -32,13 +32,13 @@ off.addEventListener('click', () => {
   on.classList.toggle('hidden')
   musica.pause()
 })
-fecha.addEventListener('click', () => {
+fecha.addEventListener('touchstart', () => {
   modals.classList.toggle('hidden')
   textoModal.classList.toggle('hidden')
   pokebola.classList.toggle('hidden')
   cerrar.classList.toggle('hidden')
 })
-cerrar.addEventListener('click', () => {
+cerrar.addEventListener('touchstart', () => {
   modals.classList.toggle('hidden')
   textoModal.classList.toggle('hidden')
   pokebola.classList.toggle('hidden')

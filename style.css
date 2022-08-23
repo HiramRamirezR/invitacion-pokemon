@@ -190,7 +190,7 @@
   height: 68px;
   z-index: 32;
 }
-.btns:hover .btns:active{
+.btns:hover {
   scale: 90%;
 }
 .contador {
