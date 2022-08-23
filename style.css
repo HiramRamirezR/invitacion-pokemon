@@ -190,7 +190,7 @@
   height: 68px;
   z-index: 32;
 }
-.btns:hover {
+.btns:hover .btns:active{
   scale: 90%;
 }
 .contador {
@@ -212,4 +212,69 @@ th {
 }
 td {
   text-align: center;
+}
+
+/* Animación */
+.logo {
+  animation: logo 2s ease 0s infinite normal forwards;
+}
+@keyframes logo {
+0% {
+  transform: scale3d(1, 1, 1);
+}
+
+30% {
+  transform: scale3d(1.25, 0.75, 1);
+}
+
+40% {
+  transform: scale3d(0.75, 1.25, 1);
+}
+
+50% {
+  transform: scale3d(1.15, 0.85, 1);
+}
+
+65% {
+  transform: scale3d(0.95, 1.05, 1);
+}
+
+75% {
+  transform: scale3d(1.05, 0.95, 1);
+}
+
+100% {
+  transform: scale3d(1, 1, 1);
+}
+}
+
+.anim {
+  animation: personajes 4s ease 0s infinite normal forwards;
+}
+@keyframes personajes {
+0%,
+100% {
+  transform: translateX(0%);
+  transform-origin: 50% 50%;
+}
+
+15% {
+  transform: translateX(-30px) rotate(-6deg);
+}
+
+30% {
+  transform: translateX(15px) rotate(6deg);
+}
+
+45% {
+  transform: translateX(-15px) rotate(-3.6deg);
+}
+
+60% {
+  transform: translateX(9px) rotate(2.4deg);
+}
+
+75% {
+  transform: translateX(-6px) rotate(-1.2deg);
+}
 }
