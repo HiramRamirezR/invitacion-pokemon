@@ -24,7 +24,7 @@ on.addEventListener('click', () => {
   on.classList.toggle('hidden')
   fondoNegro.classList.toggle('hidden')
   off.classList.toggle('hidden')
-  // musica.play()
+  musica.play()
 })
 off.addEventListener('click', () => {
   off.classList.toggle('hidden')
