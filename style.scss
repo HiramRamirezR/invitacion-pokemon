@@ -29,7 +29,7 @@ body {
   }
 
   .personajes {
-    background-color: red;
+    // background-color: red;
     position: absolute;
     top: 25%;
     left: 10%;
@@ -66,10 +66,11 @@ body {
 
   .banner {
     position: absolute;
-    left: 10%;
-    bottom: 5%;
-    width: 80%;
+    left: 20%;
+    bottom: 0%;
+    width: 60%;
     z-index: 32;
+    margin-top: 5rem;
   }
 
   .modal {
