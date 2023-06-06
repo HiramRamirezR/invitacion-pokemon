@@ -8,10 +8,6 @@ body {
 
 .container {
 
-  .fondo {
-    width: 0%;
-  }
-
   .pokemon {
     position: absolute;
     left: 10%;
@@ -19,28 +15,41 @@ body {
     width: 80%;
   }
 
-  .feliz {
-    position: absolute;
-    left: 8%;
-    top: 46%;
-    width: 48%;
-    z-index: 23;
-  }
+  // .feliz {
+  //   position: absolute;
+  //   left: 8%;
+  //   top: 46%;
+  //   width: 48%;
+  //   z-index: 23;
+  // }
 
-  .cumpleanos {
-    position: absolute;
-    left: 10%;
-    top: 54%;
-    width: 78%;
-    z-index: 24;
-  }
+  // .cumpleanos {
+  //   position: absolute;
+  //   left: 10%;
+  //   top: 54%;
+  //   width: 78%;
+  //   z-index: 24;
+  // }
 
-  .leon {
-    position: absolute;
-    left: 30%;
-    top: 60%;
-    width: 55%;
-    z-index: 26;
+  // .leon {
+  //   position: absolute;
+  //   left: 30%;
+  //   top: 60%;
+  //   width: 55%;
+  //   z-index: 26;
+  // }
+
+  .btns {
+
+    background-color: #0080ff;
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      color: #ffffff;
+      // text-shadow: 0 0 10px #ffffff;
+      font-size: 2rem;
+    }
   }
 
   .personajes {
@@ -57,23 +66,32 @@ body {
     }
   }
 
-  .btns {
-
-    background-color: #0080ff;
+  .invitacion {
+    // background-color: green;
+    height: 20%;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 80%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
 
-    a {
-      color: #ffffff;
-      // text-shadow: 0 0 10px #ffffff;
+    p {
       font-size: 2rem;
+      text-align: center;
+      font-family: 'Pokemon Solid', sans-serif;
+      color: #ffee00;
+      -webkit-text-stroke: .15rem rgb(0, 102, 255);
+      line-height: 3rem;
+      margin: -.5rem;
+      white-space: pre-line;
     }
   }
 
   .banner {
     position: absolute;
     left: 10%;
-    top: 85%;
+    bottom: 5%;
     width: 80%;
     z-index: 32;
   }
@@ -90,17 +108,9 @@ body {
     opacity: .8;
   }
 
-  .fechaModal {
+  .faltan {
     text-align: center;
     font-size: 3em;
-  }
-
-  .horaModal {
-    position: relative;
-    top: -10%;
-    text-align: center;
-    font-size: 2.5em;
-    color: rgb(255, 119, 0);
   }
 
   .pokebola {
@@ -118,7 +128,7 @@ body {
     top: 60%;
     display: flex;
     justify-content: space-around;
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: bold;
     color: white;
     user-select: none;
@@ -231,30 +241,6 @@ td {
       }
     }
 
-    .feliz {
-      position: absolute;
-      left: 3%;
-      top: 70%;
-      width: 22%;
-      z-index: 23;
-    }
-
-    .cumpleanos {
-      position: absolute;
-      left: 30%;
-      top: 70%;
-      width: 40%;
-      z-index: 24;
-    }
-
-    .leon {
-      position: absolute;
-      left: 72%;
-      top: 65%;
-      width: 25%;
-      z-index: 26;
-    }
-
     .personajes {
       // background-color: red;
       position: absolute;
@@ -266,6 +252,28 @@ td {
 
       img {
         width: 15%;
+      }
+    }
+
+    .invitacion {
+      // background-color: green;
+      height: 20%;
+      position: absolute;
+      top: 65%;
+      left: 10%;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+
+      p {
+        font-size: 3rem;
+        text-align: center;
+        font-family: 'Pokemon Solid', sans-serif;
+        color: #ffee00;
+        -webkit-text-stroke: .2rem rgb(0, 102, 255);
+        line-height: 4rem;
+        margin: -.5rem;
+        white-space: pre-line;
       }
     }
 
@@ -289,17 +297,9 @@ td {
       opacity: .8;
     }
 
-    .fechaModal {
+    .faltan {
       text-align: center;
       font-size: 3em;
-    }
-
-    .horaModal {
-      position: relative;
-      top: -10%;
-      text-align: center;
-      font-size: 2.5em;
-      color: rgb(255, 119, 0);
     }
 
     .pokebola {

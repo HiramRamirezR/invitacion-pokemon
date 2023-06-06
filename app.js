@@ -1,3 +1,4 @@
+const play = document.querySelector('.play')
 const fecha = document.querySelector('.fecha')
 const modal = document.querySelector('.modal')
 const pokebola = document.querySelector('.pokebola')
@@ -13,14 +14,18 @@ const squirtleSound = new Audio('squirtle.mp3')
 const bulbasaurSound = new Audio('bulbasaur.mp3')
 const charmanderSound = new Audio('charmander.mp3')
 
+play.addEventListener('click', () => {
+  musica.play()
+})
+
 fecha.addEventListener('click', () => {
   modal.classList.toggle('hidden')
   pokebola.classList.toggle('hidden')
 })
 
-pokebola.addEventListener('click', () => {
-  musica.play()
-})
+// pokebola.addEventListener('click', () => {
+//   musica.play()
+// })
 
 squirtle.addEventListener('click', () => {
   squirtleSound.play()
