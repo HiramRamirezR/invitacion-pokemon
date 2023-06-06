@@ -1,4 +1,8 @@
+const aPlay = document.querySelector('.aPlay')
+const aPause = document.querySelector('.aPause')
+
 const play = document.querySelector('.play')
+const pause = document.querySelector('.pause')
 const fecha = document.querySelector('.fecha')
 const modal = document.querySelector('.modal')
 const pokebola = document.querySelector('.pokebola')
@@ -16,6 +20,14 @@ const charmanderSound = new Audio('charmander.mp3')
 
 play.addEventListener('click', () => {
   musica.play()
+  aPlay.classList.add('hidden')
+  aPause.classList.toggle('hidden')
+})
+
+pause.addEventListener('click', () => {
+  musica.pause()
+  aPlay.classList.toggle('hidden')
+  aPause.classList.toggle('hidden')
 })
 
 fecha.addEventListener('click', () => {
