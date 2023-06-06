@@ -22,6 +22,7 @@ body {
   font-size: 2rem;
 }
 .container .personajes {
+  background-color: red;
   position: absolute;
   top: 25%;
   left: 10%;
