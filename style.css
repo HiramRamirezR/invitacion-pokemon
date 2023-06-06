@@ -1,215 +1,159 @@
-.on {
-  background-image: url("images/on.png");
-  position: absolute;
-  left: 184px;
-  top: 40px;
-  width: 103px;
-  height: 54px;
-  z-index: 51;
+@charset "UTF-8";
+body {
+  margin: 0;
+  background-color: rgb(255, 153, 0);
+  font-family: "DynaPuff", cursive;
 }
-.off {
-  background-image: url("images/off.png");
-  position: absolute;
-  left: 177px;
-  top: 33px;
-  width: 117px;
-  height: 69px;
-  z-index: 30;
+
+.container .fondo {
+  width: 100%;
 }
-.fondoNegro {
-  background-image: url("images/fondoNegro.png");
+.container .pokemon {
   position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 470px;
-  height: 843px;
-  z-index: 50;
+  left: 10%;
+  top: 10%;
+  width: 80%;
 }
+.container .feliz {
+  position: absolute;
+  left: 8%;
+  top: 46%;
+  width: 48%;
+  z-index: 23;
+}
+.container .cumpleanos {
+  position: absolute;
+  left: 10%;
+  top: 54%;
+  width: 78%;
+  z-index: 24;
+}
+.container .leon {
+  position: absolute;
+  left: 30%;
+  top: 60%;
+  width: 55%;
+  z-index: 26;
+}
+.container .pikachu {
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  width: 35%;
+  z-index: 18;
+}
+.container .bulbasaur {
+  position: absolute;
+  left: 65%;
+  top: 30%;
+  width: 30%;
+  z-index: 20;
+}
+.container .charmander {
+  position: absolute;
+  left: 45%;
+  top: 28%;
+  width: 30%;
+  z-index: 17;
+}
+.container .squirtle {
+  position: absolute;
+  left: 8%;
+  top: 27%;
+  width: 25%;
+  z-index: 16;
+}
+.container .titulos {
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  width: 90%;
+  z-index: 27;
+}
+.container .ubicacion {
+  position: absolute;
+  left: 5%;
+  top: 2%;
+  width: 22%;
+  z-index: 15;
+}
+.container .fecha {
+  position: absolute;
+  left: 38%;
+  top: 2%;
+  width: 22%;
+  z-index: 16;
+}
+.container .confirmar {
+  position: absolute;
+  left: 71%;
+  top: 2%;
+  width: 22%;
+  z-index: 17;
+}
+.container .banner {
+  position: absolute;
+  left: 10%;
+  top: 85%;
+  width: 80%;
+  z-index: 32;
+}
+.container .modal {
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 80%;
+  height: 50%;
+  z-index: 32;
+  opacity: 0.8;
+}
+.container .fechaModal {
+  text-align: center;
+  font-size: 3em;
+}
+.container .horaModal {
+  position: relative;
+  top: -10%;
+  text-align: center;
+  font-size: 2.5em;
+  color: rgb(255, 119, 0);
+}
+.container .pokebola {
+  position: absolute;
+  left: 40%;
+  top: 20%;
+  width: 25%;
+  z-index: 44;
+}
+.container .contador {
+  background-color: rgb(255, 0, 0);
+  position: absolute;
+  width: 100%;
+  top: 60%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
 .hidden {
   display: none;
 }
-.pokemon {
-  background-image: url("images/pokemon.png");
-  position: absolute;
-  left: 15px;
-  top: 185px;
-  width: 441px;
-  height: 163px;
-  z-index: 26;
-}
-.leon {
-  background-image: url("images/leon.png");
-  position: absolute;
-  left: 86px;
-  top: 606px;
-  width: 305px;
-  height: 135px;
-  z-index: 26;
-}
 
-.cumpleanos {
-  background-image: url("images/cumpleaños.png");
-  position: absolute;
-  left: 47px;
-  top: 553px;
-  width: 410px;
-  height: 104px;
-  z-index: 24;
-}
-.feliz {
-  background-image: url("images/feliz.png");
-  position: absolute;
-  left: 11px;
-  top: 479px;
-  width: 235px;
-  height: 98px;
-  z-index: 23;
-}
-.confirmar {
-  background-image: url("images/confirmar.png");
-  position: absolute;
-  left: 331px;
-  top: 112px;
-  width: 89px;
-  height: 61px;
-  z-index: 17;
-}
-.fecha {
-  background-image: url("images/fecha.png");
-  position: absolute;
-  left: 189px;
-  top: 112px;
-  width: 89px;
-  height: 61px;
-  z-index: 16;
-}
-.ubicacion {
-  background-image: url("images/ubicacion.png");
-  position: absolute;
-  left: 46px;
-  top: 112px;
-  width: 89px;
-  height: 61px;
-  z-index: 15;
-}
-.pikachu {
-  background-image: url("images/pikachu.png");
-  position: absolute;
-  left: 51px;
-  top: 346px;
-  width: 277px;
-  height: 235px;
-  z-index: 18;
-}
-.charmander {
-  background-image: url("images/charmander.png");
-  position: absolute;
-  left: 240px;
-  top: 319px;
-  width: 225px;
-  height: 244px;
-  z-index: 17;
-}
-.squirtle {
-  background-image: url("images/squirtle.png");
-  position: absolute;
-  left: 5px;
-  top: 333px;
-  width: 194px;
-  height: 250px;
-  z-index: 16;
-}
-.bulbasaur {
-  background-image: url("images/bolbasaur.png");
-  position: absolute;
-  left: 249px;
-  top: 431px;
-  width: 218px;
-  height: 190px;
-  z-index: 20;
-}
-.fondo {
-  background-image: url("images/fondo.png");
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 470px;
-  height: 843px;
-}
-.titulos {
-  background-image: url("images/titulos.png");
-  position: absolute;
-  left: 42px;
-  top: 175px;
-  width: 384px;
-  height: 22px;
-  z-index: 27;
-}
-.textoModal {
-  background-image: url("images/textoModal.png");
-  position: absolute;
-  left: 91px;
-  top: 292px;
-  width: 289px;
-  height: 210px;
-  z-index: 44;
-}
-.pokebola {
-  background-image: url("images/pokebola.png");
-  position: absolute;
-  left: 193px;
-  top: 590px;
-  width: 95px;
-  height: 94px;
-  z-index: 44;
-}
-.modals {
-  background-image: url("images/modal.png");
-  position: absolute;
-  left: 35px;
-  top: 249px;
-  width: 393px;
-  height: 393px;
-  z-index: 39;
-}
-.cerrar {
-  background-image: url("images/cerrar.png");
-  position: absolute;
-  left: 390px;
-  top: 231px;
-  width: 59px;
-  height: 59px;
-  z-index: 41;
-}
-.banner {
-  background-image: url("images/banner.gif");
-  position: absolute;
-  left: 85px;
-  top: 763px;
-  width: 300px;
-  height: 68px;
-  z-index: 32;
-}
 .btns:hover {
   scale: 90%;
 }
-.contador {
-  position: absolute;
-  width: 350px;
-  top: 260px;
-  left: 25px;
-  border-radius: 20px;
-  display: flex;
-  justify-content: space-around;
-  font-size: 1.5em;
-  font-weight: bold;
-  color: rgb(48, 125, 233);
-  user-select: none;
-  font-family: 'DynaPuff', cursive;
-}
+
 th {
   padding: 10px;
 }
+
 td {
   text-align: center;
 }
@@ -218,63 +162,55 @@ td {
 .logo {
   animation: logo 2s ease 0s infinite normal forwards;
 }
+
 @keyframes logo {
-0% {
-  transform: scale3d(1, 1, 1);
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
 }
-
-30% {
-  transform: scale3d(1.25, 0.75, 1);
-}
-
-40% {
-  transform: scale3d(0.75, 1.25, 1);
-}
-
-50% {
-  transform: scale3d(1.15, 0.85, 1);
-}
-
-65% {
-  transform: scale3d(0.95, 1.05, 1);
-}
-
-75% {
-  transform: scale3d(1.05, 0.95, 1);
-}
-
-100% {
-  transform: scale3d(1, 1, 1);
-}
-}
-
 .anim {
   animation: personajes 4s ease 0s infinite normal forwards;
 }
+
 @keyframes personajes {
-0%,
-100% {
-  transform: translateX(0%);
-  transform-origin: 50% 50%;
+  0%, 100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
 }
-
-15% {
-  transform: translateX(-30px) rotate(-6deg);
-}
-
-30% {
-  transform: translateX(15px) rotate(6deg);
-}
-
-45% {
-  transform: translateX(-15px) rotate(-3.6deg);
-}
-
-60% {
-  transform: translateX(9px) rotate(2.4deg);
-}
-
-75% {
-  transform: translateX(-6px) rotate(-1.2deg);
-}
-}
+@media (max-width: 500px) {
+  /* … */
+}/*# sourceMappingURL=style.css.map */
