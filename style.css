@@ -5,8 +5,7 @@ body {
 }
 
 .container {
-  background-color: #FBAB7E;
-  background-image: linear-gradient(80deg, #ff5e00 0%, #ffb700 100%);
+  background-image: linear-gradient(180deg, #ffffff 60%, #ffe100 100%);
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -15,6 +14,7 @@ body {
 }
 .container .pokemon {
   width: 75%;
+  z-index: 33;
 }
 .container .btns {
   width: 100%;
@@ -28,36 +28,40 @@ body {
   color: #ffffff;
   font-size: 2rem;
 }
+.container .bg {
+  width: 100vw;
+  position: absolute;
+  top: 3rem;
+}
 .container .personajes {
   width: 80%;
   display: flex;
   justify-content: space-between;
+  margin-top: 2rem;
+  z-index: 2;
 }
 .container .personajes img {
   width: 25%;
 }
 .container .invitacion {
-  height: 50%;
-  margin-top: 2rem;
+  z-index: 2;
+  height: auto;
   width: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .container .invitacion p {
   font-size: 1.5rem;
   text-align: center;
   font-family: "Pokemon Solid", sans-serif;
-  color: #ffee00;
-  -webkit-text-stroke: 0.15rem rgb(0, 102, 255);
+  color: #ffcc00;
+  -webkit-text-stroke: 0.1rem rgb(0, 102, 255);
   line-height: 3rem;
-  margin: -0.5rem;
   white-space: pre-line;
 }
 .container .invitacion .cumple {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: 900;
 }
 .container .banner {
   position: absolute;
@@ -171,8 +175,7 @@ td {
 }
 @media (min-width: 500px) {
   .container {
-    background-color: #FBAB7E;
-    background-image: linear-gradient(80deg, #ff5e00 0%, #ffb700 100%);
+    background-image: linear-gradient(180deg, #ffffff 60%, #ffe100 100%);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -181,10 +184,11 @@ td {
   }
   .container .pokemon {
     width: 35%;
+    z-index: 33;
   }
   .container .btns {
     width: 100%;
-    height: 3rem;
+    height: 5rem;
     background-color: #0080ff;
     display: flex;
     justify-content: space-around;
@@ -192,34 +196,41 @@ td {
   }
   .container .btns a {
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 4rem;
+  }
+  .container .bg {
+    position: absolute;
+    top: 5rem;
   }
   .container .personajes {
-    width: 60%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
+    margin-top: 2rem;
+    z-index: 2;
   }
   .container .personajes img {
     width: 25%;
   }
   .container .invitacion {
-    height: 50%;
-    margin-top: 2rem;
+    z-index: 32;
+    height: auto;
     width: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   .container .invitacion p {
-    font-size: 2rem;
+    font-size: 3.5rem;
     text-align: center;
     font-family: "Pokemon Solid", sans-serif;
-    color: #ffee00;
-    -webkit-text-stroke: 0.15rem rgb(0, 102, 255);
-    line-height: 3rem;
-    margin: -0.5rem;
+    color: #ffcc00;
+    -webkit-text-stroke: 0.1rem rgb(0, 102, 255);
+    line-height: 4rem;
     white-space: pre-line;
+  }
+  .container .invitacion .cumple {
+    font-size: 4.5rem;
+    font-weight: 900;
   }
   .container .banner {
     position: absolute;
@@ -242,13 +253,13 @@ td {
   }
   .container .faltan {
     text-align: center;
-    font-size: 3em;
+    font-size: 4em;
   }
   .container .pokebola {
     position: absolute;
-    left: 45%;
-    top: 20%;
-    width: 10%;
+    left: 43%;
+    top: 15%;
+    width: 15%;
     z-index: 44;
   }
   .container .contador {
@@ -258,7 +269,7 @@ td {
     top: 60%;
     display: flex;
     justify-content: space-around;
-    font-size: 1.2em;
+    font-size: 3.2em;
     font-weight: bold;
     color: white;
     -webkit-user-select: none;

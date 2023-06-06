@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--AniJS-->
+  <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css"/>
   <link rel="shortcut icon" href="#" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -19,24 +21,25 @@
     <!-- botones -->
 
     <div class="btns">
-      <a class="aPlay" href="#"><i class="play fa-solid fa-music"></i></a>
-      <a class="aPause hidden" href="#"><i class="pause fa-sharp fa-solid fa-pause"></i></a>
+      <a class="aPlay" href="#" data-anijs="if: click, do: bounceIn animated"><i class="play fa-solid fa-music"></i></a>
+      <a class="aPause hidden" href="#" data-anijs="if: click, do: bounceIn animated"><i class="pause fa-sharp fa-solid fa-pause"></i></a>
       <a href="https://goo.gl/maps/WpBhLr7TpLhvxekR8" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
-      <a href="#"><i class="fecha fa-solid fa-calendar-days"></i></a>
+      <a href="#"><i class="fecha fa-solid fa-calendar-days" data-anijs="if: click, do: bounceIn animated"></i></a>
       <a href="https://forms.gle/6JbVkVoQvMSHFiuF7" target="_blank"><i class="fa-solid fa-circle-check"></i></a>
     </div>
 
     <!-- botones fin -->
 
     <img class="logo pokemon" src="images/pokemon.png" alt="">
+    <img class="bg" src="/images/bg.png" alt="">
 
     <!-- personajes -->
 
     <div class="personajes">
-      <img class="anim squirtle" src="images/squirtle.png" alt="">
-      <img class="anim pikachu" src="images/pikachu.png" alt="">
-      <img class="anim charmander" src="images/charmander.png" alt="">
-      <img class="anim bulbasaur" src="images/bolbasaur.png" alt="">
+      <img class="squirtle" src="images/squirtle.png" alt="" data-anijs="if: click, do: bounceIn animated">
+      <img class="pikachu" src="images/pikachu.png" alt="" data-anijs="if: click, do: bounceIn animated">
+      <img class="charmander" src="images/charmander.png" alt="" data-anijs="if: click, do: bounceIn animated">
+      <img class="bulbasaur" src="images/bolbasaur.png" alt="" data-anijs="if: click, do: bounceIn animated">
     </div>
 
     <!-- personajes fin-->
@@ -45,7 +48,7 @@
 
     <div class="invitacion">
       <p class="logo cumple">Leo cumple 8</p>
-      <p class="anim" data-anijs="if: click, do: swing animated">¡Te invito a mi fiesta!
+      <p class="anim">¡Te invito a mi fiesta!
                       27 de mayo
                       2:00 p.m.
                       Confirma tu asistencia.
@@ -56,7 +59,7 @@
 
 
 
-    <img class="hidden pokebola" src="images/pokebola.png" alt="">
+    <img class="hidden pokebola" src="images/pokebola.png" alt="" data-anijs="if: click, do: bounceIn animated">
     <div class="hidden modal">
       <p class="faltan">Faltan:</p>
       <div class="contador">
@@ -82,5 +85,6 @@
 
   <script src="app.js"></script>
   <script src="contador.js"></script>
+  <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script>
 </body>
 </html>
