@@ -42,6 +42,7 @@ body {
   }
 
   .invitacion {
+    // background-color: red;
     height: 50%;
     margin-top: 2rem;
     width: 80%;
@@ -51,7 +52,7 @@ body {
     align-items: center;
 
     p {
-      font-size: 2rem;
+      font-size: 1.5rem;
       text-align: center;
       font-family: 'Pokemon Solid', sans-serif;
       color: #ffee00;
@@ -59,6 +60,11 @@ body {
       line-height: 3rem;
       margin: -.5rem;
       white-space: pre-line;
+    }
+
+    .cumple {
+      font-size: 3rem;
+      margin-bottom: 20px;
     }
   }
 
@@ -159,32 +165,32 @@ td {
 .anim {
   animation: personajes 4s ease 0s infinite normal forwards;
 }
+
 @keyframes personajes {
-0%,
-100% {
-  transform: translateX(0%);
-  transform-origin: 50% 50%;
-}
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
 
-15% {
-  transform: translateX(-30px) rotate(-6deg);
-}
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
 
-30% {
-  transform: translateX(15px) rotate(6deg);
-}
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
 
-45% {
-  transform: translateX(-15px) rotate(-3.6deg);
-}
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
 
-60% {
-  transform: translateX(9px) rotate(2.4deg);
-}
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
 
-75% {
-  transform: translateX(-6px) rotate(-1.2deg);
-}
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
 }
 
 
