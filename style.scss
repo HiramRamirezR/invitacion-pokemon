@@ -120,14 +120,15 @@ body {
 
   .divBanner {
     position: absolute;
-    // background-color: red;
+    background-color: white;
     width: 100vw;
     bottom: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    z-index: 5;
 
     img {
-      border-radius: 10px;
+      width: 60%;
     }
   }
 

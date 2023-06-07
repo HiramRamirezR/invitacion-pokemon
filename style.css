@@ -108,13 +108,15 @@ body {
 }
 .container .divBanner {
   position: absolute;
+  background-color: white;
   width: 100vw;
   bottom: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  z-index: 5;
 }
 .container .divBanner img {
-  border-radius: 10px;
+  width: 60%;
 }
 
 .hidden {
