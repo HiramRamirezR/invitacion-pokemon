@@ -185,7 +185,7 @@ td {
   }
 }
 .bounce-out-top {
-  animation: bounce-out-top 1.5s both;
+  animation: bounce-out-top 1.5s both infinite;
 }
 
 @keyframes bounce-out-top {
@@ -210,7 +210,7 @@ td {
     animation-timing-function: ease-out;
   }
   52% {
-    transform: translateY(-75px);
+    transform: translateY(-105px);
     animation-timing-function: ease-in;
   }
   70% {
@@ -221,8 +221,7 @@ td {
     opacity: 1;
   }
   100% {
-    transform: translateY(-800px);
-    opacity: 0;
+    transform: translateY(0px);
   }
 }
 @media (min-width: 500px) {
