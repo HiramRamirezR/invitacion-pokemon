@@ -107,7 +107,7 @@ body {
           user-select: none;
 }
 .container .divBanner {
-  position: absolute;
+  position: fixed;
   background-color: white;
   width: 100vw;
   bottom: 10px;
