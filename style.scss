@@ -269,4 +269,25 @@ td {
 
 @media (min-width: 500px) {
 
+  .container {
+
+    .cumple {
+      font-size: 8rem;
+      font-weight: 900;
+      z-index: 2;
+      text-align: center;
+      color:#ffbf00;
+      -webkit-text-stroke: .1rem #000000;
+    }
+
+  }
+
+  .divBanner {
+
+    img {
+      height: 80px;
+    }
+
+  }
+
 }
