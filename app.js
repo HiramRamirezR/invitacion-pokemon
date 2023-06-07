@@ -4,7 +4,9 @@ const aPause = document.querySelector('.aPause')
 const play = document.querySelector('.play')
 const pause = document.querySelector('.pause')
 const fecha = document.querySelector('.fecha')
-const modal = document.querySelector('.modal')
+const invitacion = document.querySelector('.invitacion')
+const modalInvitacion = document.querySelector('.modalInvitacion')
+const modalContador = document.querySelector('.modalContador')
 const pokebola = document.querySelector('.pokebola')
 
 const pikachu = document.querySelector('.pikachu')
@@ -30,24 +32,28 @@ pause.addEventListener('click', () => {
   aPause.classList.toggle('hidden')
 })
 
+invitacion.addEventListener('click', () => {
+  modalInvitacion.classList.toggle('hidden')
+})
+
 fecha.addEventListener('click', () => {
-  modal.classList.toggle('hidden')
+  modalContador.classList.toggle('hidden')
   pokebola.classList.toggle('hidden')
 })
 
-// pokebola.addEventListener('click', () => {
-//   musica.play()
-// })
-
 squirtle.addEventListener('click', () => {
   squirtleSound.play()
-})
-bulbasaur.addEventListener('click', () => {
-  bulbasaurSound.play()
+  squirtle.classList.add('bounce-out-top')
 })
 pikachu.addEventListener('click', () => {
   pikachuSound.play()
+  pikachu.classList.add('bounce-out-top')
 })
 charmander.addEventListener('click', () => {
   charmanderSound.play()
+  charmander.classList.add('bounce-out-top')
+})
+bulbasaur.addEventListener('click', () => {
+  bulbasaurSound.play()
+  bulbasaur.classList.add('bounce-out-top')
 })
