@@ -35,6 +35,7 @@ pause.addEventListener('click', () => {
 invitacion.addEventListener('click', () => {
   modalInvitacion.classList.toggle('hidden')
   modalContador.classList.add('hidden')
+  pokebola.classList.add('hidden')
 })
 
 fecha.addEventListener('click', () => {
